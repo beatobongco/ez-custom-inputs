@@ -1,0 +1,34 @@
+.custom-radio,
+.custom-checkbox {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
+}
+.custom-checkbox {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 3px;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label .custom-radio {
+  background-image: url(../img/radio_empty.png);
+}
+input[type="radio"]:checked + label .custom-radio {
+  background-image: url(../img/radio_selected.png);
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label .custom-checkbox {
+  background-image: url(../img/checkbox_empty.png);
+}
+input[type="checkbox"]:checked + label .custom-checkbox {
+  background-image: url(../img/checkbox_selected.png);
+}
